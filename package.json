@@ -1,0 +1,14 @@
+{
+  "name": "unblockedgames",
+  "version": "BETA",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dev Pirates",
+  "license": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

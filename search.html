@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+</head>
+<body>
+
+<!-- Search input -->
+<form onsubmit="event.preventDefault(); search();">
+  <input type="text" id="searchInput" placeholder="Search...('Enter' to see all)">
+  <button type="submit">Search</button>
+</form>
+
+<!-- Display search results -->
+<div id="searchResults"></div>
+
+  <script>
+    // Sample data for demonstration
+    const files = [
+      "among-us.html",
+      "bitlife.html",
+      "cookie-clicker.html",
+      "drift-hunters.html",
+      "drive-mad.html",
+      "eaglercraft(minecraft).html",
+      "getaway-shootout.html",
+      "iddle-digging-tycoon.html",
+      "jetpack-joyride.html",
+      "moto-x3m.html",
+      "offroader-v5.html",
+      "paper-io-2.html",
+      "penalty-shooters-2.html",
+      "pixel-gun-survival.html",
+      "pixwars-2.html",
+      "raft-wars.html",
+      "rooftop-snipers.html",
+      "Shoot-stickman.html",
+      "slope.html",
+      "sniper-gun-shooting.html",
+      "stick-merge.html",
+      "stickman-hook.html",
+      "subway-surfers-newyork.html",
+      "super-hot.html",
+      "the-impossible-quiz.html",
+      "top-speed-3d.html",
+      "tunnel-rush.html"
+    ];
+
+    // Function to perform search
+    function search() {
+      const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = ""; // Clear previous results
+
+      // Filter files based on search term
+      const filteredFiles = files.filter(file => {
+        const fileName = file.toLowerCase().replace('.html', ''); // Remove .html extension
+        return fileName.includes(searchTerm);
+      });
+
+      // Display filtered results
+      filteredFiles.forEach(file => {
+        const fileName = file.replace('.html', ''); // Remove .html extension
+        const link = document.createElement("a");
+        link.href = "go/" + file; // Assuming files are located in a folder named "go"
+        link.textContent = fileName;
+        resultsContainer.appendChild(link);
+        resultsContainer.appendChild(document.createElement("br"));
+      });
+    }
+  </script>
+
+</body>
+</html>
