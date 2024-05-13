@@ -3,6 +3,7 @@ git commit -m "update"
 git push origin main
 git pull origin main
 
+clear
 echo "   {-}"
 sleep 0.2
 
