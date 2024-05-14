@@ -1,5 +1,6 @@
 clear
-echo "Updating..."
+echo "Updating...
+"
 
 sleep 2
 
