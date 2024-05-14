@@ -138,7 +138,8 @@ Would you like to run process again? [Yn]:"
     
     ./edit.sh
   elif [ "$message" = "n" ]; then
-    echo "Ending process..."
+    echo "
+    Ending process..."
     sleep 1
     clear
     exit
