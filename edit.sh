@@ -117,8 +117,7 @@ sleep 0.2
 
 clear
 
-echo "
-Enable auto-updates? [Yn]:"
+echo "Enable auto-updates? [Yn]:"
 read message
 
 if [ "$message" = "y" ]; then
@@ -139,7 +138,7 @@ Would you like to run process again? [Yn]:"
     ./edit.sh
   elif [ "$message" = "n" ]; then
     echo "
-    Ending process..."
+Ending process..."
     sleep 1
     clear
     exit
