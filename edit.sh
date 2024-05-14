@@ -121,7 +121,8 @@ echo "Enable auto-updates? [Yn]:"
 read message
 
 if [ "$message" = "y" ]; then
-  echo "Enabling auto-updates..."
+  echo "
+Enabling auto-updates..."
   sleep 1
 
   chmod +x auto-updates.sh
