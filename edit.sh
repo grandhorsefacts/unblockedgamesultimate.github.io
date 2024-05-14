@@ -117,7 +117,8 @@ sleep 0.2
 
 clear
 
-echo "Enable auto-updates? [Yn]:"
+echo "
+Enable auto-updates? [Yn]:"
 read message
 
 if [ "$message" = "y" ]; then
@@ -127,7 +128,8 @@ if [ "$message" = "y" ]; then
   chmod +x auto-updates.sh
   ./auto-updates.sh
 elif [ "$message" = "n" ]; then
-  echo "Would you like to run process again? [Yn]:"
+  echo "
+Would you like to run process again? [Yn]:"
   read message
   
   if [ "$message" = "y" ]; then
