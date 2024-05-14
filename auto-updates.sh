@@ -10,6 +10,6 @@ git push origin main
 git pull origin main
 clear
 
-sleep 13
+sleep 18
 
 ./auto-updates.sh
