@@ -98,12 +98,22 @@
       position: absolute;
       z-index: 99;
       transition: all 1s;
+      margin-left: 765px; /* Adjusted position */
+      margin-bottom: 260px; /* Adjusted position */
     }
 
-    .fullscreen:hover {
+    .fullscreen a {
+      padding: 10px 20px;
+      background-color: rgba(150, 130, 166, 0.1); /* Adjusted color */
+      color: #fff;
       text-decoration: none;
-      transform: translate(-2,-2);
-      transition: all 1s;
+      border-radius: 90px;
+      transition: all 2s;
+    }
+
+    .fullscreen a:hover {
+      background-color: rgba(172, 151, 190, 0.1); /* Adjusted color */
+      text-decoration: none; /* Removed underline */
     }
 
     footer {
