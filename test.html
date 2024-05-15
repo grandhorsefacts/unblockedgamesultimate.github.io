@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta charset="UTF-8">
@@ -7,6 +6,47 @@
   <link rel="stylesheet" href="special.css">
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans"> -->
   <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+  <style>
+    body {
+      background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIepEkJiK90XL3olE5b1YM2ABEU2Tn4yVUpx9_pmN-ExvyEUvu');
+      background-size: cover;
+      font-family: sans-serif;
+      padding-bottom: 100px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .game-iframe {
+      border-radius: 12px;
+      background-color: rgb(200, 75, 205, 0.3);
+      padding-bottom: 65px;
+      width: 65%;
+    }
+
+    .title {
+      color: #fff;
+      font-size: 24px;
+      font-family: Arial;
+      font-weight: 300;
+    }
+
+    .fullscreen {
+      font-size: 18px;
+    }
+
+    .ad {
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      width: 30%;
+      height: 600px;
+    }
+  </style>
 </head>
 <body>
   <div class="header">
@@ -26,186 +66,11 @@
       }
     }
   </script>
-  <style>
-    body {
-      background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIepEkJiK90XL3olE5b1YM2ABEU2Tn4yVUpx9_pmN-ExvyEUvu');
-      background-size: cover;
-      font-family: sans-serif;
-      padding-bottom: 100px;
-    }
-
-    h1 {
-      color: rgb(220,220,220);
-      font-size: 25px;
-      font-family: sans-serif;
-    }
-
-    .push {
-      margin-left: 850px; /* I WORKED ON THIS FOR SO LONG IT HURTS!!! :( */
-    }
-
-    .header {
-      padding-left: 45px;
-      padding-right: 100px;
-      background-color: rgb(27, 4, 42);
-      border-radius: 20px;
-      padding-top: 2px;
-    }
-
-    img {
-      border-radius: 22px;
-      width: 210px;
-      transition: transform 1s, filter 3s, all 2s;
-      filter: brightness(11%);
-    }
-
-    img:hover{
-      transform: translate(0, -2.5px);
-      transition: transform 1s, filter 1s, all 1s;
-      filter: brightness(100%);
-      box-shadow: 7px 7px 4px rgba(27, 4, 40, 0.5);
-    }
-
-    img:active {
-      transition: all 2s;
-      filter: brightness(25%);
-    }
-
-    hr {
-      color: rgb(80,60,70);
-      border-color: rgb(86,2,75);
-      border-radius: 2000px;
-    }
-
-    p {
-      font-family: Arial;
-      font-size: 44px;
-      color: white;
-      text-shadow: 0px 0px 0.5px rgb(200,200,200);
-      padding-left: 15px;
-    }
-
-    .game-iframe {
-      position: relative;
-      z-index: 1;
-      margin-bottom: -40px; 
-    }
-
-    iframe {
-      border-radius: 12px;
-      background-color: rgb(200, 75, 205, 0.3);
-      padding-bottom: 65px;
-      margin-left: 20px;
-    }
-
-    .fullscreen {
-      position: absolute;
-      z-index: 99;
-      transition: all 1s;
-      top: 697px;
-    }
-
-    .fullscreen a {
-      padding: 10px 20px;
-      background-color: rgba(100, 50, 120, 0.4); 
-      color: #fff;
-      text-decoration: none;
-      border-radius: 90px;
-      transition: all 2s;
-    }
-
-    .fullscreen a:hover {
-      background-color: rgba(150, 100, 120, 0.6); 
-      text-decoration: none;
-      box-shadow: 2px 2px rgb(100, 60, 130, 0.3);
-      transform: translate(-2px,-2px);
-      transition: all 3s;
-    }
-
-    footer {
-      background-color: rgba(66,61,61,0.1);
-      padding-bottom: 5px;
-      padding-top: 5px;
-      border-radius: 200px;
-      text-align: center;
-      margin-right: 45px;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    .purple {
-      color: rgb(141, 84, 171);
-      text-shadow: 0px 0px 4px rgba(141,84,171,0.4);
-    }
-
-    form {
-      margin-bottom: 20px;
-    }
-
-    input[type="text"] {
-      padding: 8px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      position: center;
-    }
-
-    button[type="submit"] {
-      padding: 8px 16px;
-      font-size: 16px;
-      background-color: #4CAF;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #4CAF50;
-    }
-
-    #searchResults {
-      margin-top: 120px;
-      margin-right: 40px;
-      text-align: center;
-      font-size: 25px;
-      color: black;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0a1a29;
-      transition: all 1s;
-      color: black;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      transition: all 1s;
-    }
-
-    .title {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 100px;
-      position: absolute;
-      z-index: 99;
-      transition: all 1s;
-      top: 680px;
-      font-size: 24px;
-      font-family: /*"Open Sans", */Arial;
-      font-weight: 300;
-    }
-
-    .ad {
-      height: 600px;
-      width: 250px;
-    }
-  </style>
-  <iframe class="game-iframe" id="game-area" src="https://tag-2.github.io/a/among-us" width="900" height="600" scrolling="none" frameborder="0" allowfullscreen=""></iframe> 
-  <div class="title"><h3>Among Us</h3></div>
-  <div class="fullscreen"><a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Full Screen</a></div>
-  <iframe class="ad" id="Advertisment" src="ads/index.html"></iframe>
+  <div class="container">
+    <iframe class="game-iframe" id="game-area" src="https://tag-2.github.io/a/among-us" scrolling="none" frameborder="0" allowfullscreen=""></iframe> 
+    <div class="title"><h3>Among Us</h3></div>
+    <div class="fullscreen"><a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Full Screen</a></div>
+    <iframe class="ad" id="Advertisment" src="ads/index.html"></iframe>
+  </div>
 </body>
 </html>
