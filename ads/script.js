@@ -1,9 +1,7 @@
 var adFiles = [
-    /*"dev-pirates-1.html",
-    "dev-pirates-2.html",
+    /*"dev-pirates-1.html",*/
     "premium-1.html",
-    "premium-2.html",
-    "premium-3.html",*/
+    "premium-1.html",
     "error-ad.html"
 ];
 
