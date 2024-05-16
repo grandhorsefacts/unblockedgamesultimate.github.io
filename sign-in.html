@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <!--  <meta http-equiv = "refresh" content = "0; url = /index(maintenance).html" /> -->
+    <meta http-equiv = "refresh" content = "200; url = https://canvas.asdk12.org/" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="special.css">
+    <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+  </head>
+  <body>
+    <h2>Sign In</h2>
+    <form action="login.php" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <input type="submit" value="Sign In">
+    </form>
+
+    <h2>Sign Up</h2>
+    <form action="register.php" method="POST">
+        <label for="new_username">New Username:</label><br>
+        <input type="text" id="new_username" name="new_username"><br>
+
+        <label for="new_password">New Password:</label><br>
+        <input type="password" id="new_password" name="new_password"><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+  </body>
+</html>
